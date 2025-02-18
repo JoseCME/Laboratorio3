@@ -1,6 +1,5 @@
 ﻿List<string> estudiantes = new List<string>();
 List<double> calificaciones = new List<double>();
-int opcion;
 
 //esta funcion es para mostrar el menu
 void MostrarMenu()
@@ -98,8 +97,9 @@ while (true)
     {
     Console.WriteLine("Bienvenido al sistema de gestión de estudiantes.");
     MostrarMenu();
+    int opcion;
 
-    try
+     try
     {
         opcion = int.Parse(Console.ReadLine());
     }
